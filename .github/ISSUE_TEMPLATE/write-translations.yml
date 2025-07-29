@@ -1,32 +1,47 @@
-name: Write translation to a guide
-description: Make a translation to the Translations/ folder to help readers read in their localities
-title: "Add Translation: <translated guide file>"
-labels: [good first issue, documentation]
+name: Write a Translation for a Guide
+description: Help make Zoea Open Source more accessible by translating a guide into your local language 🌍
+title: "Add Translation: <language> - <original guide title>"
+labels: [good first issue, documentation, translation]
 body:
   - type: input
-    id: title
+    id: original-guide
     attributes:
-      label: What guide did you translate?
-      placeholder: e.g. Guides/directory/file.txt - How to Fork and Clone a Repo
+      label: Which guide did you translate?
+      placeholder: e.g. guides/how-to-fork.md
+    validations:
+      required: true
+
+  - type: input
+    id: new-file
+    attributes:
+      label: What is the name of your translated file?
+      placeholder: e.g. guides/lang/how-to-fork.es.md (for Spanish)
     validations:
       required: true
 
   - type: checkboxes
-    id: Translation-guide
+    id: read-instructions
     attributes:
-      label: Did you read the Translation instructions before making your edits?
-      description: You may select one.
+      label: Did you read the Translation Guidelines before submitting?
+      description: (This ensures translations are consistent and accessible.)
       options:
-        - label: "Yes"
-        - label: "No"
+        - label: Yes, I read the Translation instructions
+        - label: No, I haven’t (yet)
     validations:
       required: true
-      
+
   - type: textarea
-    id: description
+    id: proficiency
     attributes:
-      label: What is your proficiency in the language of translation?
-      placeholder: Briefly describe what you did, whether you made an edit or a full translation and in which language.
+      label: What is your proficiency in this language?
+      placeholder: e.g. I’m a native French speaker / I’m fluent in Swahili / I’m intermediate in Spanish
     validations:
       required: true
-      
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Anything else you'd like to share?
+      placeholder: e.g. I only translated part of the guide / I used external sources / Suggestions for improvement
+    validations:
+      required: false
