@@ -1,7 +1,7 @@
 name: Add a simple code snippet
 description: Add a beginner-friendly code snippet to the solutions/ directory
 title: "Add code snippet: <language or task>"
-labels: [good first issue, code]
+labels: [good first issue, Code]
 body:
   - type: input
     id: language
