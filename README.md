@@ -10,8 +10,6 @@ In this repo, you’ll find everything you need to start your open source journe
 - Practice issues
 - Project templates
 - Community support
-    
-<br>
 
 ## 🌱 What is Open Source?
 
