@@ -21,7 +21,7 @@ body:
   - type: textarea
     id: fact
     attributes:
-      label: Tell us a fun fact about you or share an emoji!
+      label: Tell us a fun fact about you or a programming language you like!
       placeholder: e.g. 🧡 I love Rust!
     validations:
       required: false
