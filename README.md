@@ -96,3 +96,9 @@ If you have questions, need help, or want to join the community:
 ## ✨ Contribute with Kindness
 
 Remember: every contribution counts. Whether it’s one line of code, fixing a typo, or answering a question, you belong here.
+
+### Top 100 Contributors
+
+[![GitHub Contributors Image](https://contrib.rocks/image?repo=rezzcode/zoea-opensource)](https://github.com/rezzcode/zoea-opensource/graphs/contributors)
+
+[Back to the top &uparrow;](#zoea-open-source)
