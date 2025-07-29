@@ -21,23 +21,23 @@ What will be listed? the language the translation has been made in, for example,
 
 -->
 
+|||||
+|----|----|----|----|
 ||||
-|----|----|----|
-|||
 ---
 
 ## Guides Translations
 
+|||||
+|----|----|----|----|
 ||||
-|----|----|----|
-|||
 
 ---
 
 ## Terminal Tutorial
 
+|||||
+|----|----|----|----|
 ||||
-|----|----|----|
-|||
 
 ---
