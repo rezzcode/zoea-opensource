@@ -1,0 +1,28 @@
+name: Write a new guide
+description: Add a guide to the guides/ folder to help beginners
+title: "Add guide: <guide-title>"
+labels: [good first issue, documentation]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: What's the title of your guide?
+      placeholder: e.g. How to Fork and Clone a Repo
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What will your guide help people do?
+      placeholder: Briefly describe what you'll cover in your markdown guide
+    validations:
+      required: true
+
+  - type: textarea
+    id: outline
+    attributes:
+      label: Optional - Add a rough outline or bullet points
+      placeholder: Step 1 - Fork | Step 2 - Clone | Step 3 - Branch...
+    validations:
+      required: false
