@@ -17,9 +17,9 @@ body:
       label: Did you read the Translation instructions before making your edits?
       description: You may select one.
       options:
-        - label: Yes
+        - label: "Yes"
           required: true
-        - label: No
+        - label: "No"
       
   - type: textarea
     id: description
