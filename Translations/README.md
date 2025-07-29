@@ -34,7 +34,7 @@ What will be listed? the language the translation has been made in, for example,
 
 ---
 
-## Terminal Tutorial
+## Solutions Translations
 
 |||||
 |----|----|----|----|
