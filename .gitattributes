@@ -1,0 +1,6 @@
+# Markdown
+*.md linguist-detectable=true
+*.md linguist-documentation=false
+
+# mysql
+*.sql linguist-detectable=true
