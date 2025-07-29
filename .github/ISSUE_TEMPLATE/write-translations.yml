@@ -18,8 +18,9 @@ body:
       description: You may select one.
       options:
         - label: "Yes"
-          required: true
         - label: "No"
+    validations:
+      required: true
       
   - type: textarea
     id: description
