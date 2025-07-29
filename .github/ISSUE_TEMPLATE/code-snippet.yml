@@ -1,0 +1,28 @@
+name: Add a simple code snippet
+description: Add a beginner-friendly code snippet to the solutions/ directory
+title: "Add code snippet: <language or task>"
+labels: [good first issue, code]
+body:
+  - type: input
+    id: language
+    attributes:
+      label: What language is your snippet written in?
+      placeholder: e.g. Python, Rust
+    validations:
+      required: true
+
+  - type: input
+    id: filename
+    attributes:
+      label: What will the filename be?
+      placeholder: e.g. fizzbuzz.py
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What does your snippet do?
+      placeholder: e.g. Classic FizzBuzz problem, a program that prints numbers 1 to 100
+    validations:
+      required: true
