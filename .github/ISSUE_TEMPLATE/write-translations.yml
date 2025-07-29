@@ -1,0 +1,31 @@
+name: Write translation to a guide
+description: Make a translation to the Translations/ folder to help readers read in their localities
+title: "Add Translation: <translated guide file>"
+labels: [good first issue, documentation]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: What guide did you translate?
+      placeholder: e.g. Guides/directory/file.txt - How to Fork and Clone a Repo
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: Translation-guide
+    attributes:
+      label: Did you read the Translation instructions before making your edits?
+      description: You may select one.
+      options:
+        - label: Yes
+          required: true
+        - label: No
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: What is your proficiency in the language of translation?
+      placeholder: Briefly describe what you did, whether you made an edit or a full translation and in which language.
+    validations:
+      required: true
+      
