@@ -1,0 +1,20 @@
+name: Suggest a helpful resource
+description: Share a blog, course, or video that helps others learn Git or open source
+title: "Recommend: <resource title>"
+labels: [resources, beginner friendly]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Link to the resource
+      placeholder: e.g. https://learngitbranching.js.org/
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why do you recommend it?
+      placeholder: Briefly explain how it helped you or why it's useful.
+    validations:
+      required: true
