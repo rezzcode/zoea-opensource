@@ -1,0 +1,20 @@
+name: Fix a typo or grammar issue
+description: Help improve clarity by fixing typos or grammar in markdown files
+title: "Fix typo in <filename>"
+labels: [documentation, beginner friendly]
+body:
+  - type: input
+    id: file
+    attributes:
+      label: Which file did you update?
+      placeholder: e.g. guides/first-pr.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: change
+    attributes:
+      label: What changes did you make?
+      placeholder: Describe the typo or sentence you improved.
+    validations:
+      required: true
