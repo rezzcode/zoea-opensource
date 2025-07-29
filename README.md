@@ -1,2 +1,3 @@
-# zoea-opensource
-helping you learn opensource contribution like a pro
+# Zoea Open Source
+
+Helping you learn opensource contribution like a pro.
