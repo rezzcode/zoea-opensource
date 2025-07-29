@@ -1,7 +1,7 @@
 name: Add your name to CONTRIBUTORS.md
 description: A simple and fun way to make your first contribution 🎉
 title: "Add <your-name> to CONTRIBUTORS.md"
-labels: [good first issue, beginner-friendly]
+labels: [good first issue, beginner friendly]
 body:
   - type: markdown
     attributes:
