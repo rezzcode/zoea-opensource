@@ -86,6 +86,8 @@ Here’s why contributing to open source is awesome:
 
 ## Ready to Get Started?
 
+Head over to the [contribution guide](https://github.com/rezzcode/zoea-opensource/blob/main/CONTRIBUTING.md) to start.
+
 ## Having a problem
 
 If you have questions, need help, or want to join the community:
