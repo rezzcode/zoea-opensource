@@ -15,6 +15,8 @@ zoea-opensource/
 │
 ├── guides/      ← Markdown guides to help you learn how to contribute
 ├── solutions/   ← Contributions from users: code, tutorials, experiments, etc.
+├── translations/   ← Guide Translations to help you read in your preferred language.
+
 ```
 
 ## Ways You Can Contribute
@@ -29,6 +31,7 @@ Add or improve markdown files in the guides/ folder:
 - Git tutorials
 - Open source contribution tips
 - Anything that can help beginners get started
+- Translations
 
 ### 💡 Solutions
 
@@ -49,13 +52,15 @@ You can even submit creative solutions to example challenges we'll post.
 
 ## Getting Started
 
-- Fork this repository
+- Open a copy of this page on another tab to help you follow up.
+- [Fork](https://github.com/rezzcode/zoea-opensource/fork) this repository
 - Clone the forked repo to your machine
 - Create a new branch for your changes
-- Make your changes in either `guides/` or `solutions/`
+- Make your changes in either `guides/`, `solutions/` or `translations/`
 - Commit with a clear message
 - Push your changes to your fork
 - Open a Pull Request (PR)
+- Be patient while waiting for your pr to get reviewed and merged
 
 📌 Guidelines
 
@@ -71,6 +76,7 @@ You can even submit creative solutions to example challenges we'll post.
 
 - Want to contribute a Markdown tutorial? → `guides/intro-to-prs.md`
 - Want to show a simple Python fix? → `solutions/python-fix-example/your_file.py`
+- Want to add a translation to the guide? → `translations/Guide/guide-directory/fileName.lang.md`
 - Want to practice resolving merge conflicts? We’ll set up sample ones soon!
 
 ## 🚧 What We're Still Planning
@@ -86,7 +92,7 @@ Have ideas? Open an [issue](https://github.com/rezzcode/zoea-opensource/issues) 
 
 ## Need Help?
 
-No worries—this is a learning space. If you're unsure how to start, visit the `guides/` directory or ask a question in the Discussions tab.
+No worries, this is a learning space. If you're unsure how to start, visit the `guides/` directory or ask a question in the Discussions tab.
 
 ## Thank You
 
