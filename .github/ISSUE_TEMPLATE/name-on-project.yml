@@ -1,0 +1,27 @@
+name: Add your name to CONTRIBUTORS.md
+description: A simple and fun way to make your first contribution 🎉
+title: "Add <your-name> to CONTRIBUTORS.md"
+labels: [good first issue, beginner-friendly]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your interest in contributing! 💖
+
+        In this issue, you'll be adding your name to the `CONTRIBUTORS.md` file.
+
+  - type: input
+    id: name
+    attributes:
+      label: What's your name?
+      placeholder: e.g. rezz_code
+    validations:
+      required: true
+
+  - type: textarea
+    id: fact
+    attributes:
+      label: Tell us a fun fact about you or share an emoji!
+      placeholder: e.g. 🧡 I love Rust!
+    validations:
+      required: false
