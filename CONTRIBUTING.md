@@ -74,17 +74,17 @@ You can even submit creative solutions to example challenges we'll post.
 
 ## Examples
 
-- Want to contribute a Markdown tutorial? → `guides/intro-to-prs.md`
-- Want to show a simple Python fix? → `solutions/python-fix-example/your_file.py`
-- Want to add a translation to the guide? → `translations/Guide/guide-directory/fileName.lang.md`
-- Want to practice resolving merge conflicts? We’ll set up sample ones soon!
+Here are some example guides you can pick to get started with the contribution.
+
+|[Fixing Merge Conflicts](https://github.com/rezzcode/zoea-opensource/tree/main/Guides/Conflicts_Guide)|[Adding name to Contributors.md](https://github.com/rezzcode/zoea-opensource/tree/main/Guides/Names)||
+|-|-|-|
+||||
 
 ## 🚧 What We're Still Planning
 
 We're currently working on:
 
 - Creating beginner-friendly issues for you to tackle
-- Sample merge conflict scenarios
 - Templates for code challenges
 - Directory structure best practices
 
