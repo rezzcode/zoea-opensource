@@ -234,7 +234,7 @@ Read more about pull requests on the [GitHub help pages](https://help.github.com
 
 </details>
 
-📌 Guidelines
+## 📌 Guidelines
 
 - ✅ Be kind and respectful – especially to beginners
 - ✅ Keep content beginner-friendly and easy to understand
