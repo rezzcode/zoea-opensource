@@ -75,26 +75,19 @@ jobs:
 
       - name: Comment with next steps
         uses: actions/github-script@v7
-        env:
-          USERNAME: ${{ steps.vars.outputs.username }}
-          UUID: ${{ steps.vars.outputs.uuid }}
-          SCENARIO_FILE: ${{ steps.vars.outputs.scenario_file }}
         with:
           script: |
-            const username = process.env.USERNAME;
-            const uuid = process.env.UUID;
-            const scenario_file = process.env.SCENARIO_FILE;
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `🎉 Conflict scenario ready for **@${username}**
+              body: `🎉 Conflict scenario ready for **@${{ steps.vars.outputs.username }}**
 
-🔹 Branch \`main\`: version A  
-🔹 Branch \`conflict-${uuid}\`: version B
+              🔹 Branch \`main\`: version A  
+              🔹 Branch \`conflict-${{ steps.vars.outputs.uuid }}\`: version B
 
-File to resolve:
-\`Solutions/Conflict-fixes/${username}-${scenario_file}\`
+              File to resolve:
+              \`Solutions/Conflict-fixes/${{ steps.vars.outputs.username }}-${{ steps.vars.outputs.scenario_file }}\`
 
-Fork the repo, resolve the conflict, then open a PR to complete the task! 💪`
+              Fork the repo, resolve the conflict, then open a PR to complete the task! 💪`
             })
