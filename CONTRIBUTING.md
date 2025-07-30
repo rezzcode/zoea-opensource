@@ -268,6 +268,18 @@ Have ideas? Open an [issue](https://github.com/rezzcode/zoea-opensource/issues) 
 
 No worries, this is a learning space. If you're unsure how to start, visit the `guides/` directory or ask a question in the Discussions tab.
 
+## 🐞 Reporting a bug
+
+So you've found a bug, and want to help us fix it? Before filing a bug report, please double-check that the bug hasn't already been reported. You can do so [on our issue tracker](https://github.com/rezzcode/zoea-opensource/issues?q=is%3Aissue+is%3Aopen+label%3Abug). If something hasn't been raised, you can go ahead and create a new issue with the following information:
+
+* On which page did the error happen?
+* How can the error be reproduced?
+* If possible, please also provide an error message or a screenshot to illustrate the problem
+
+If you want to be really thorough, there is a great overview on Stack Overflow of [what you should consider when reporting a bug](http://stackoverflow.com/questions/240323/how-to-report-bugs-the-smart-way).
+
+It goes without saying that you're welcome to help investigate further and/or find a fix for the bug. If you want to do so, just mention it in your bug report and offer your help!
+
 ## Thank You
 
 Thank you for being part of Zoea Open Source. Your contribution—big or small is helping someone else grow. That’s the magic of open source.
