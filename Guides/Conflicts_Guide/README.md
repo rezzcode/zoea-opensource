@@ -2,16 +2,21 @@
 
 Welcome to your first hands-on merge conflict resolution task! This guide walks you through resolving a **merge conflict via GitHub** step by step.
 
-> 💬 **Note**: This is a GitHub-focused guide. A CLI (local terminal) version is coming soon — feel free to contribute it!
+> 💬 **Note**: This is a GitHub-focused guide. A CLI (local terminal) version is coming soon — feel free to contribute to it!
 
+## What are merge conflicts?
 
-## 📖 Open This Guide in a New Tab
-Keep this page open side-by-side while you work.
+A GitHub conflict occurs when people make changes to the same area or line in a file. This must be resolved to prevent a collision in the main branch.
+
+- **To read more about this, go to [GitHub Docs - About Merge Conflicts](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts)**
+
+- **To find out about how to fix a Git Conflict, go to [GitHub Docs - Resolve Merge Conflict](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)**
 
 ---
 
 ## 🐛 Step 1: Create an Issue
 
+- Open This Guide in a New Tab: Keep this page open side-by-side while you work.
 1. Go to the repo’s [**Issues**](https://github.com/rezzcode/zoea-opensource/issues) tab.
 2. Click **"New Issue"**.
 3. Choose the template `Practice: Resolving Merge Conflicts`.
