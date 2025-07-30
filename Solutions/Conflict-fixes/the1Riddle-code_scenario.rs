@@ -1,12 +1,12 @@
 /**
- * A program that takes a value, eg 1 and returns its type
+ * A program that takes a value, eg b, and returns its type
  * plus other types
  * 
- * Note: the program does not accept strings
+ * Note: the program doesn't accept strings
  * 
  * How to use: 
- * rezzcode@linux$ rustc get_type.rs
- * rezzcode@linux$ ./get_type.rs 4
+ * rezzcode@linux$ rustc code_scenario.rs
+ * rezzcode@linux$ ./code_scenario.rs 8
  * 
  * 4 is of type i32: 4 bytes
  * Other types:
