@@ -31,14 +31,14 @@ jobs:
           challenge_type=$(echo "$body" | grep -A2 "challenge_type" | grep 'value:' | sed 's/^[[:space:]]*value:[[:space:]]*//' | head -n1)
           
           if [ -z "$challenge_type" ]; then
-            challenge_type=$(echo "$body" | grep -A1 "What type of challenge do you want?" | tail -n1 | tr -d '- ')
+            challenge_type=$(echo "$body" | grep -A1 "What type of challenge do you want?" | tail -n1 | tr -d '\r')
           fi
           
           # Extract scenario_file (input)
           scenario_file=$(echo "$body" | grep -A2 "scenario_file" | grep 'value:' | sed 's/^[[:space:]]*value:[[:space:]]*//')
           
           if [ -z "$scenario_file" ]; then
-            scenario_file=$(echo "$body" | grep -A1 "Scenario file name" | tail -n1 | tr -d '- ')
+            scenario_file=$(echo "$body" | grep -A1 "Scenario file name" | tail -n1 | tr -d '\r')
           fi
 
           # Set fallback defaults
