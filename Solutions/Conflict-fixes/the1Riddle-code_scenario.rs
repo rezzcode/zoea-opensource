@@ -5,8 +5,8 @@
  * Note: the program doesn't accept strings
  * 
  * How to use: 
- * rezzcode@linux$ rustc scenario.rs
- * rezzcode@linux$ ./scenario.rs 2
+ * rezzcode@linux$ rustc code_scenario.rs
+ * rezzcode@linux$ ./code_scenario.rs 8
  * 
  * 4 is of type i32: 4 bytes
  * Other types:
