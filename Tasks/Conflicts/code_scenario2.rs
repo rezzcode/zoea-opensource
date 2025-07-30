@@ -67,7 +67,7 @@ fn print_other_types(exclude: &str) {
         println!("Size of i32: {} bytes", mem::size_of::<i32>());
     }
     if exclude != "u32" {
-        println!("Size of i32: {} bytes", mem::size_of::<i32>());
+        println!("Size of u32: {} bytes", mem::size_of::<u32>());
     }
     if exclude != "f64" {
         println!("Size of f64: {} bytes", mem::size_of::<f64>());
