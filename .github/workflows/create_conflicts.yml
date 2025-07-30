@@ -53,26 +53,43 @@ jobs:
 
           target_file="Solutions/Conflict-fixes/${username}-${scenario_file}"
 
+          # Compose variant file names (base, 2, 3)
+          ext="${scenario_file##*.}"
+          base="${scenario_file%.*}"
+          file1="${scenario_file}"
+          file2="${base}2.${ext}"
+          file3="${base}3.${ext}"
+
           echo "uuid=$uuid" >> $GITHUB_OUTPUT
           echo "username=$username" >> $GITHUB_OUTPUT
           echo "scenario_file=$scenario_file" >> $GITHUB_OUTPUT
           echo "target_file=$target_file" >> $GITHUB_OUTPUT
+          echo "file1=$file1" >> $GITHUB_OUTPUT
+          echo "file2=$file2" >> $GITHUB_OUTPUT
+          echo "file3=$file3" >> $GITHUB_OUTPUT
 
-      - name: Copy stub and commit to main
+      - name: Copy stub and commit to main (version 1 file)
         run: |
-          cp "Tasks/Conflicts/${{ steps.vars.outputs.scenario_file }}" "${{ steps.vars.outputs.target_file }}"
-          echo "// version A for ${{ steps.vars.outputs.username }}" >> "${{ steps.vars.outputs.target_file }}"
+          cp "Tasks/Conflicts/${{ steps.vars.outputs.file1 }}" "${{ steps.vars.outputs.target_file }}"
           git add "${{ steps.vars.outputs.target_file }}"
-          git commit -m "Add scenario file for ${{ steps.vars.outputs.username }}"
+          git commit -m "Add scenario file for ${{ steps.vars.outputs.username }} (version 1)"
           git push origin main
 
-      - name: Create conflict branch and modify file
+      - name: Create conflict branch and overwrite with version 3
         run: |
           git checkout -b conflict-${{ steps.vars.outputs.uuid }}
-          echo "// version B for ${{ steps.vars.outputs.username }}" >> "${{ steps.vars.outputs.target_file }}"
+          cp "Tasks/Conflicts/${{ steps.vars.outputs.file3 }}" "${{ steps.vars.outputs.target_file }}"
           git add "${{ steps.vars.outputs.target_file }}"
-          git commit -m "Introduce conflicting change for ${{ steps.vars.outputs.username }}"
+          git commit -m "Introduce conflicting change for ${{ steps.vars.outputs.username }} (version 3)"
           git push origin conflict-${{ steps.vars.outputs.uuid }}
+
+      - name: Generate actual conflict in main (overwrite with version 2)
+        run: |
+          git switch main
+          cp "Tasks/Conflicts/${{ steps.vars.outputs.file2 }}" "${{ steps.vars.outputs.target_file }}"
+          git add "${{ steps.vars.outputs.target_file }}"
+          git commit -m "Introduce conflicting change for ${{ steps.vars.outputs.username }} (version 2)"
+          git push origin main
 
       - name: Comment with next steps
         uses: actions/github-script@v7
@@ -91,8 +108,8 @@ jobs:
               repo: context.repo.repo,
               body: `🎉 Conflict scenario ready for **@${username}**
 
-              🔹 Branch \`main\`: version A  
-              🔹 Branch \`conflict-${uuid}\`: version B
+              🔹 Branch \`main\`: version 2  
+              🔹 Branch \`conflict-${uuid}\`: version 3
 
               File to resolve:
               \`Solutions/Conflict-fixes/${username}-${scenario_file}\`
