@@ -80,16 +80,12 @@ Keep this page open side-by-side while you work.
    - Click **"Mark as Resolved"**.
    - Then **"Commit Merge"**.
 
-|  Image Illustration  |
-|-|
-|<img width="469" height="264" alt="Image" src="https://github.com/user-attachments/assets/52147ebd-bb77-4e6d-9644-e712b55123a4" />|
+|  Image Illustration  |  Illustration 2  |
+|-|-|
+|<img width="469" height="264" alt="Image" src="https://github.com/user-attachments/assets/52147ebd-bb77-4e6d-9644-e712b55123a4" />| <img width="406" height="348" alt="Image" src="https://github.com/user-attachments/assets/03d14417-808d-4a23-aaa1-26c5d12dc9b1" />|
 
 2. You'll now see that **your PR can be merged**.
 3. Assign any team member or maintainer for review.
-
-|  Image Illustration  |
-|-|
-|<img width="406" height="348" alt="Image" src="https://github.com/user-attachments/assets/03d14417-808d-4a23-aaa1-26c5d12dc9b1" />|
 
 ---
 
