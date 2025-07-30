@@ -74,3 +74,4 @@ fn print_other_types(exclude: &str) {
     }
 }
 // version A for the1Riddle
+// version B for the1Riddle
