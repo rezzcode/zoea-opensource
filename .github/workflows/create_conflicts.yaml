@@ -1,0 +1,93 @@
+name: Auto-generate conflict scenario
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  generate-conflict:
+    if: github.event.issue.title == 'Practice merge conflict resolution'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Git
+        run: |
+          git config user.name "github-actions"
+          git config user.email "154701770+rezzcode@users.noreply.github.com"
+
+      - name: Parse challenge type and scenario file
+        id: vars
+        run: |
+          uuid=$(uuidgen | cut -d- -f1)
+          username="${{ github.event.issue.user.login }}"
+          body="${{ github.event.issue.body }}"
+
+          # Extract dropdown value and scenario file (if typed)
+          challenge_type=$(echo "$body" | grep -A1 "challenge type" | tail -n1 | tr -d '\r')
+          scenario_file=$(echo "$body" | grep -A1 "Scenario file name" | tail -n1 | tr -d '\r')
+
+          # Set fallback defaults
+          fallback_code="code_scenario.rs"
+          fallback_text="txt_scenario.md"
+
+          # Determine file path
+          if [ -z "$scenario_file" ]; then
+            if [ "$challenge_type" = "text" ]; then
+              scenario_file="$fallback_text"
+            else
+              scenario_file="$fallback_code"
+            fi
+          elif [ ! -f "Tasks/Conflicts/$scenario_file" ]; then
+            # Invalid filename fallback
+            if [ "$challenge_type" = "text" ]; then
+              scenario_file="$fallback_text"
+            else
+              scenario_file="$fallback_code"
+            fi
+          fi
+
+          target_file="Solutions/Conflict-fixes/${username}-${scenario_file}"
+
+          echo "uuid=$uuid" >> $GITHUB_OUTPUT
+          echo "username=$username" >> $GITHUB_OUTPUT
+          echo "scenario_file=$scenario_file" >> $GITHUB_OUTPUT
+          echo "target_file=$target_file" >> $GITHUB_OUTPUT
+
+      - name: Copy stub and commit to main
+        run: |
+          cp "Tasks/Conflicts/${{ steps.vars.outputs.scenario_file }}" "${{ steps.vars.outputs.target_file }}"
+          echo "// version A for ${{ steps.vars.outputs.username }}" >> "${{ steps.vars.outputs.target_file }}"
+          git add "${{ steps.vars.outputs.target_file }}"
+          git commit -m "Add scenario file for ${{ steps.vars.outputs.username }}"
+          git push origin main
+
+      - name: Create conflict branch and modify file
+        run: |
+          git checkout -b conflict-${{ steps.vars.outputs.uuid }}
+          echo "// version B for ${{ steps.vars.outputs.username }}" >> "${{ steps.vars.outputs.target_file }}"
+          git add "${{ steps.vars.outputs.target_file }}"
+          git commit -m "Introduce conflicting change for ${{ steps.vars.outputs.username }}"
+          git push origin conflict-${{ steps.vars.outputs.uuid }}
+
+      - name: Comment with next steps
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `🎉 Conflict scenario ready for **@${{ steps.vars.outputs.username }}**
+
+🔹 Branch \`main\`: version A  
+🔹 Branch \`conflict-${{ steps.vars.outputs.uuid }}\`: version B
+
+File to resolve:
+\`Solutions/Conflict-fixes/${{ steps.vars.outputs.username }}-${{ steps.vars.outputs.scenario_file }}\`
+
+Fork the repo, resolve the conflict, then open a PR to complete the task! 💪`
+            })
