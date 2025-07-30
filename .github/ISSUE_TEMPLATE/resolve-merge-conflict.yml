@@ -1,0 +1,35 @@
+name: Practice resolving a merge conflict
+description: Learn how to resolve a Git merge conflict locally
+title: "Practice merge conflict resolution"
+labels: [git practice, beginner friendly]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 👋 Welcome!
+
+        This task is designed to help you practice resolving Git **merge conflicts**.
+
+        You’ll be merging a conflict branch into `main`, which will have conflicting changes in a file inside:
+
+        ```
+        Solutions/Conflict-fixes/
+        ```
+
+  - type: dropdown
+    id: challenge_type
+    attributes:
+      label: What type of challenge do you want?
+      description: Choose whether you want to resolve a code or text-based conflict
+      options:
+        - code
+        - text
+    validations:
+      required: true
+
+  - type: input
+    id: scenario_file
+    attributes:
+      label: (Optional) Scenario file name
+      description: You can also choose a file name you would wish to work with.
+      placeholder: code_scenario.rs
