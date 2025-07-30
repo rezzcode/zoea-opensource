@@ -21,22 +21,14 @@ What will be listed? the language the translation has been made in, for example,
 
 -->
 
-|||||
+|[English](https://github.com/rezzcode/zoea-opensource/blob/main/README.md)||||
 |----|----|----|----|
 ||||
 ---
 
 ## Guides Translations
 
-|||||
-|----|----|----|----|
-||||
-
----
-
-## Solutions Translations
-
-|||||
+|[English](https://github.com/rezzcode/zoea-opensource/tree/main/Guides)||||
 |----|----|----|----|
 ||||
 
