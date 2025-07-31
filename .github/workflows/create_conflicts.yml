@@ -28,8 +28,9 @@ jobs:
           body="${{ github.event.issue.body }}"
 
           # Extract dropdown value and scenario file (if typed)
-          challenge_type=$(echo "$body" | grep -A1 "challenge type" | tail -n1 | tr -d '\r')
-          scenario_file=$(echo "$body" | grep -A1 "Scenario file name" | tail -n1 | tr -d '\r')
+          challenge_type=$(echo "$body" | grep -A2 "challenge type" | sed '/^$/d' | tail -n1 | tr -d '\r')
+          scenario_file=$(echo "$body" | grep -A2 "Scenario file name" | sed '/^$/d' | tail -n1 | tr -d '\r')
+
 
           # Set fallback defaults
           fallback_code="code_scenario.rs"
