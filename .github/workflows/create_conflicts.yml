@@ -61,6 +61,9 @@ jobs:
           file2="${base}2.${ext}"
           file3="${base}3.${ext}"
 
+          echo "challenge_type=$challenge_type"
+          echo "scenario_file=$scenario_file"
+
           echo "uuid=$uuid" >> $GITHUB_OUTPUT
           echo "username=$username" >> $GITHUB_OUTPUT
           echo "scenario_file=$scenario_file" >> $GITHUB_OUTPUT
