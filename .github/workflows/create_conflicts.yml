@@ -28,7 +28,7 @@ jobs:
           body="${{ github.event.issue.body }}"
 
           # Extract dropdown value and scenario file (if typed)
-          challenge_type=$(echo "$body" | grep -A2 "challenge type" | sed '/^$/d' | tail -n1 | tr -d '\r')
+          challenge_type=$(echo "$body" | grep -A2 "What type of challenge do you want" | sed '/^$/d' | tail -n1 | tr -d '\r')
           scenario_file=$(echo "$body" | grep -A2 "Scenario file name" | sed '/^$/d' | tail -n1 | tr -d '\r')
 
 
