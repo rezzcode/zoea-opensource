@@ -101,6 +101,6 @@ Remember: every contribution counts. Whether it’s one line of code, fixing a t
 
 ### Top 100 Contributors
 
-[![GitHub Contributors Image](https://contrib.rocks/image?repo=rezzcode/zoea-opensource)](https://github.com/rezzcode/zoea-opensource/graphs/contributors)
+[![GitHub Contributors Image](https://contributors-img.web.app/image?repo=rezzcode/zoea-opensource)](https://github.com/rezzcode/zoea-opensource/graphs/contributors)
 
 [Back to the top &uparrow;](#zoea-open-source)
