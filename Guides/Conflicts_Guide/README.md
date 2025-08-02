@@ -2,7 +2,8 @@
 
 Welcome to your first hands-on merge conflict resolution task! This guide walks you through resolving a **merge conflict via GitHub** step by step.
 
-> 💬 **Note**: This is a GitHub-focused guide. A CLI (local terminal) version is coming soon — feel free to contribute to it!
+> [!NOTE]<br>
+> This is a GitHub-focused guide. A CLI (local terminal) version is coming soon — feel free to contribute to it!
 
 ## What are merge conflicts?
 
@@ -104,7 +105,11 @@ That was a real contributor skill — well done! You just:
 - Fixed a conflict
 - Used GitHub’s merge UI
 
-> ✨ **Tip**: Try other issues, such as translations, fixes, or CLI contributions! <br>
+> [!TIP]<br>
+> Did you know you can get a Pair Extraordinaire and Pull Shark badge by doing this task? <br>
+> How?: If you resolved a code merge conflict, now is the time to fix a text-based one or vice versa to get the badges. <br>
+> **More on Tasks** <br>
+> You can try other issues, such as translations, fixes, or CLI contributions! <br>
 > Give this repo a star if you found the task useful
 
 ## 📢 Help Improve This Guide
