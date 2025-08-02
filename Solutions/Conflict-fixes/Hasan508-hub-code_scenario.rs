@@ -1,5 +1,5 @@
 /**
- * A program that takes a value, eg b, and returns its type
+ * A program that takes a value, eg 5, and returns its type
  * plus other types
  * 
  * Note: the program doesn't accept strings
@@ -57,7 +57,7 @@ fn main() {
     }
 }
 
-// Print sizes of types excluding the one that matched
+// Print sizes of types, excluding the one that matched
 fn print_other_types(exclude: &str) {
     println!("Other types:");
     if exclude != "char" {
@@ -67,7 +67,7 @@ fn print_other_types(exclude: &str) {
         println!("Size of i32: {} bytes", mem::size_of::<i32>());
     }
     if exclude != "u32" {
-        println!("Size of u32: {} bytes", mem::size_of::<u32>());
+        println!("Size of i32: {} bytes", mem::size_of::<i32>()); // bug to fix
     }
     if exclude != "f64" {
         println!("Size of f64: {} bytes", mem::size_of::<f64>());
