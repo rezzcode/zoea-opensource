@@ -1,4 +1,3 @@
-![Alt](https://repobeats.axiom.co/api/embed/a58a75e471b3e5170715c6cccf199f3d1ba1dd78.svg "Repobeats analytics image")
 
 # Zoea Open Source
 
@@ -12,6 +11,10 @@ In this repo, you’ll find everything you need to start your open source journe
 - Practice issues
 - Project templates
 - Community support
+
+<br>
+
+![Alt](https://repobeats.axiom.co/api/embed/a58a75e471b3e5170715c6cccf199f3d1ba1dd78.svg "Repobeats analytics image")
 
 ## 🌱 What is Open Source?
 
