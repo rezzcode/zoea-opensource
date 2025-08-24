@@ -1,3 +1,5 @@
+![Alt](https://repobeats.axiom.co/api/embed/a58a75e471b3e5170715c6cccf199f3d1ba1dd78.svg "Repobeats analytics image")
+
 # Zoea Open Source
 
 > Your first step into Open Source contribution like a pro!
