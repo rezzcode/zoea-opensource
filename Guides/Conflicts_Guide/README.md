@@ -109,14 +109,16 @@ That was a real contributor skill — well done! You just:
 > Did you know you can get a Pair Extraordinaire and Pull Shark badge by doing this task? <br>
 > How?: If you resolved a code merge conflict, now is the time to fix a text-based one or vice versa to get the badges. <br>
 > **More on Tasks** <br>
-> You can try other issues, such as translations, fixes, or CLI contributions! <br>
-> Give this repo a star if you found the task useful
+> You can try other issues, such as translations, fixes, or CLI contributions!
 
+<!--
 ## 📢 Help Improve This Guide
 
 Think you can write a version of this guide for local Git CLI users? Check out this [ISSUE](https://github.com/rezzcode/zoea-opensource/issues/16)
 
----
+--->
 
 Happy contributing 💙
+
+- Give this repo a star if you found the task useful
 
