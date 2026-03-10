@@ -2,4 +2,4 @@
 
 This file will be used to practice resolving merge conflicts.
 
-Current state: Original content.
+Current state: Changed in main branch.
