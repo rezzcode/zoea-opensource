@@ -31,14 +31,14 @@ fn main() {
     let input = &args[1]; // The input string to be parsed
 
     // Try parsing input as i32
-    if let Ok(value) = input.parse::<i32>() {
-        println!("{value} is of type i32: {} bytes", mem::size_of::<i32>());
-        print_other_types("i32");
-    }
-    // Try parsing input as u32
-    else if let Ok(value) = input.parse::<u32>() {
+    if let Ok(value) = input.parse::<u32>() {
         println!("{value} is of type u32: {} bytes", mem::size_of::<u32>());
         print_other_types("u32");
+    }
+    // Try parsing input as u32
+    else if let Ok(value) = input.parse::<i32>() {
+        println!("{value} is of type i32: {} bytes", mem::size_of::<i32>());
+        print_other_types("i32");
     }
     // Try parsing input as f64
     else if let Ok(value) = input.parse::<f64>() {
