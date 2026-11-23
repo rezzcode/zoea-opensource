@@ -44,9 +44,10 @@ You will see a list of available branches. If you do not see any new branches, d
 The new branch should appear on your terminal after running `git branch`or in your fork's branch selector. If it does not appear, review your commands to make sure the branch names are spelled correctly.
 
 ## Updating an Existing Branch
-1. To update a branch that already exists, enter:
+1. If you have an existing branch you want to update, enter the command below to switch to it:
 
         git fetch upstream
         git switch <branch-name>
-3. 
+
+3. Now that you are working 
 4. 
