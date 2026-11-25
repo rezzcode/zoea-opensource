@@ -5,6 +5,8 @@ When you create a fork from a repository, it may go out of date as the main repo
 * Fetch a new branch from the upstream repository
 * Create a new branch or update a pre-existing branch 
 * Verify that your branches are up to date
+These instructions apply to both text and code updates. To update both text and code in the same fork, follow the instructions below for creating and syncing new branches for each task you want to complete. 
+
 ## You Will Need
 * A local copy of your fork
 * The name of the branch you want to fetch
