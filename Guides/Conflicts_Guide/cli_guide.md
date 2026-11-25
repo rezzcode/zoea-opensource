@@ -99,4 +99,4 @@ Closes #<issue-number>
 * If the terminal seems hard to use, try GitHub Desktop or the VS Code Git extension. 
 * Always check your changes with git status and git diff before you commit. 
 * Keep your commit messages clear and descriptive.
-* If you are having trouble maintaining your fork, go to [Guides/Conflicts_Guide/updating-forks.md](https://github.com/aiko-doss/zoea-opensource/blob/e2a8ade67a583b075758c244e939e5d1685f9411/Guides/Conflicts_Guide/updating-forks.md).
+* If you are having trouble maintaining your fork, go to [Updating Fork Repository Branches](Guides/Conflicts_Guide/updating-forks.md)
