@@ -33,7 +33,7 @@ git checkout <conflict-branch-name>
 
 
 > [!NOTE]<br>
-> If you could not find your assigned branch you can check this [Document](Guides/Conflicts_Guide/updating-forks.md#adding-a-new-branch)
+> If you could not find your assigned branch you can check this [Document](https://github.com/rezzcode/zoea-opensource/blob/main/Guides/Conflicts_Guide/updating-forks.md#updating-your-fork)
 
 ### Step 3: Merge Main into Your Branch
 
