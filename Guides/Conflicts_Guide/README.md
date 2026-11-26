@@ -3,7 +3,7 @@
 Welcome to your first hands-on merge conflict resolution task! This guide walks you through resolving a **merge conflict via GitHub** step by step.
 
 > [!NOTE]<br>
-> This is a GitHub-focused guide. A CLI (local terminal) version is coming soon — feel free to contribute to it!
+> This is a GitHub-focused guide. A CLI (local terminal) version can be found here: [CLI-Guide](Guides/Conflicts_Guide/cli_guide.md)
 
 ## What are merge conflicts?
 
