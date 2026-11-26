@@ -12,7 +12,7 @@ A GitHub conflict occurs when people make changes to the same area or line in a 
 - **To read more about this, go to [GitHub Docs - About Merge Conflicts](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts)**
 
 - **To find out about how to fix a Git Conflict, go to [GitHub Docs - Resolve Merge Conflict](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)**
-
+- **To read more about updating fork repository branches, go to [Updating Fork Repository Branches](Guides/Conflicts_Guide/updating-forks.md)**
 ---
 
 ## 🐛 Step 1: Create an Issue
